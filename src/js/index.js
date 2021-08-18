@@ -19,7 +19,7 @@ function SecondsCounter(props) {
 			<div className="OneZero">{props.digitOne % 10}</div>
 			<div className="TwoZero">{props.digitTwo % 10}</div>
 			<div className="ThreeZero">{props.digitThree % 10}</div>
-			<div className="FourZero">{props.digitFour % 10}0</div>
+			<div className="FourZero">{props.digitFour % 10}</div>
 			<div className="FiveZero">{props.digitFive % 10}</div>
 			<div className="Seconds">{props.digitSeconds % 10}</div>
 		</div>
@@ -53,7 +53,7 @@ setInterval(function() {
 		/>,
 		document.querySelector("#app")
 	);
-	1000;
+	1000000;
 });
 
 //render your react application
