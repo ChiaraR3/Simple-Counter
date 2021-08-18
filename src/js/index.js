@@ -7,9 +7,20 @@ import "bootstrap";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
-
+import "./icons.js";
 //import your own components
-import Home from "./component/home.jsx";
+function SecondsCounter(props) {
+	return (
+		<div className="BigCounter">
+			<div className="Clock">
+				<i className="far fa-clock"></i>
+			</div>
+			,<div className="OneZero">0</div>,<div className="TwoZero">0</div>,
+			<div className="ThreeZero">0</div>,<div className="FourZero">0</div>
+			,<div className="FiveZero">0</div>,<div className="Seconds">0</div>,
+		</div>
+	);
+}
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<SecondsCounter />, document.querySelector("#app"));
