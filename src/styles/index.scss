@@ -1,8 +1,15 @@
 @import "~bootstrap/scss/bootstrap.scss";
+.BigCounter {
+        text-align: center;
+        background: black;
 
-.SecondsCounter div {
+}
+.BigCounter div {
     display: inline-block;
-    font-size: 20px;
-    line-height: 20px;
-    height: 20px;
+    font-size: 70px;
+    line-height:70px;
+    padding: 1n0px;
+    background: black;
+    color:white;
+    margin: 3px;
 }
